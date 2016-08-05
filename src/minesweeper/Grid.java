@@ -1,7 +1,6 @@
 package minesweeper;
 
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -45,14 +44,14 @@ public class Grid {
   private int getNumberOfSquaresWithoutMine() {
     int count=0;
     for (Square square : grid) {
-      if(square.hasMine){
+      if(!square.hasMine){
         count++;
       }
     }
     return count;
   }
 
-  public boolean isOpen(Square square) {
+  boolean isOpen(Square square) {
   return(square.isOpen);
   }
 
@@ -67,5 +66,13 @@ public class Grid {
 
   public boolean isFlagged(Square square) {
   return(square.flagged);
+  }
+
+  private void updateTheNeighboursOfSquares(){
+    int neighbour;
+    for (Square square : grid) {
+     neighbour=0;
+      grid.contains()
+    }
   }
 }

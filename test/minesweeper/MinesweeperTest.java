@@ -62,6 +62,29 @@ public void shouldBeAbleToEndTheGameIfSquareWithMineIsOpened() throws GameOverEx
 
 
 }
+@Test
+  public void shouldBeAbleToSetTheNumberOfNeighboursWithMineOfOpenedSquare(){
+  Square square1 = new Square(0, 0, false);
+  Square square2 = new Square(0, 1, false);
+  Square square3 = new Square(1, 2, true);
+  Square square4 = new Square(1, 0, false);
+  Square square5 = new Square(1, 1, true);
+  Square square6 = new Square(1, 2, false);
+  Square square7 = new Square(2, 0, false);
+  Square square8 = new Square(2, 1, false);
+  Square square9 = new Square(2, 2, false);
+  Grid grid = new Grid(
+      square1,
+      square2,
+      square3,
+      square4,
+      square5,
+      square6,
+      square7,
+      square8,
+      square9);
+
+}
 
 
 }

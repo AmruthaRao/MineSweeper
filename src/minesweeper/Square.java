@@ -5,7 +5,8 @@ public class Square {
   private int yCoordinate;
   boolean hasMine;
   boolean flagged;
-boolean isOpen;
+  boolean isOpen;
+  int numberOfNeighbours;
 
   public Square(int xCoordinate, int yCoordinate, boolean hasMine) {
     this.xCoordinate = xCoordinate;
